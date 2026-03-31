@@ -1,0 +1,7 @@
+# Disable screensaver, screen blanking, and power management
+xset s off
+xset s noblank
+xset -dpms
+
+# Run Appspace
+snap run appspace-app

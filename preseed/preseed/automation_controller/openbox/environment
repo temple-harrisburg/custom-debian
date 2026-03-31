@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+export CONFIG_FILE="${CONFIG_FILE:="${HOME}/.kramer_config"}"
+
+# Variables for automation controller
+if [ -f "$CONFIG_FILE" ]; then
+    # shellcheck disable=SC1090
+    . "$CONFIG_FILE" 
+fi

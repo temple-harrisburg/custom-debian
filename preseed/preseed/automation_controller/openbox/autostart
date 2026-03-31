@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# 
+# $HOME/.config/openbox/autostart
+# 
+# This runs when the kiosk user logs in.
+# Runs interactive setup on first login. After
+# configuration is saved, it launches the
+# chromium interface instead. 
+# 
+# Interactive setup can be run manually with `setup`.
+
+if [ "${SKIP_SETUP:-0}" -lt 1 ]; then 
+    zutty -T "Kiosk Setup" -e "$(realpath ~/setup.sh)"
+else
+    start_interface
+fi

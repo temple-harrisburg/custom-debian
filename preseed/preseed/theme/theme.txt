@@ -1,0 +1,49 @@
+title-color: "white"
+title-text: "Debian GNU/Linux 13.1.0"
+title-font: "Sans Regular 16"
+desktop-color: "black"
+message-color: "white"
+desktop-image: "background.png"
+message-bg-color: "black"
+terminal-font: "Sans Regular 12"
+
++ boot_menu {
+  left = 18%
+  width = 50%
+  top = 200
+  height = 200
+  item_font = "Sans Regular 12"
+  item_color = #c0c0c0
+  selected_item_color = "#ffffff"
+  item_height = 20
+  item_padding = 15
+  item_spacing = 10
+}
+
++ progress_bar {
+    id = "__timeout__"
+    text = "@TIMEOUT_NOTIFICATION_LONG@"
+    text_color = "white"
+    fg_color = "#98113a"
+    width = 100%
+}
+
++ vbox {
+  top = 100%-60
+  left = 10%
+  + hbox {
+    top = 0
+    left = 20%
+    + label {text = "Enter: " font = "Sans 10" color = "white" align = "left"}
+    + label {text = "Select             " font = "Sans 10" color = "#c0c0c0" align = "left"}
+  }
+  + hbox {
+    top = 0
+    left = 20%
+    + label {text = "E:     " font = "Sans 10" color = "white" align = "left"}
+    + label {text = "Edit Selection     " font = "Sans 10" color = "#c0c0c0" align = "left"}
+    + label {text = "           " font = "Sans 10" color = "white" align = "left"}
+    + label {text = "C:     " font = "Sans 10" color = "white" align = "left"}
+    + label {text = "GRUB Command line" font = "Sans 10" color = "#c0c0c0" align = "left"}
+  }  
+}
