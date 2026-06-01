@@ -30,7 +30,7 @@ function save_config () {
     cat << EOF > "$CONFIG_FILE"
 export SKIP_SETUP="1"
 export KRAMER_IP="${KRAMER_IP}"
-export KRAMER_PORT="${KRAMER_PORT}
+export KRAMER_PORT="${KRAMER_PORT}"
 export KRAMER_INTERFACE="${KRAMER_INTERFACE}"
 export KRAMER_PAGE="${KRAMER_PAGE}"
 export KRAMER_IMMERSIVE="${KRAMER_IMMERSIVE}"
